@@ -2,38 +2,47 @@ package com.twitter.poruke;
 
 public class TwitterPoruka {
 	/**
-	 * atributi klase TwitterPoruka
-	 * korisnik predstavlja nadimak koji je korisnik izabrao
-	 * poruka je tekst poruke koju korisnik zeli da objavi
+	 * atributi klase TwitterPoruka korisnik predstavlja nadimak koji je
+	 * korisnik izabrao poruka je tekst poruke koju korisnik zeli da objavi
 	 */
 	private String korisnik;
 	private String poruka;
+
 	/**
 	 * metoda koja vraca atribut korisnik
-	 * @return
+	 * 
+	 * @return korisnika
 	 */
 	public String getKorisnik() {
 		return korisnik;
 	}
+
 	/**
 	 * metoda koja postavlja vrednost atributa korisnik
+	 * 
 	 * @param korisnik
 	 */
 	public void setKorisnik(String korisnik) {
-		if (korisnik == null || korisnik.equals("")){
-			throw new RuntimeException("Ime korisnika mora biti uneto");}
+		if (korisnik == null || korisnik.equals("")) {
+			throw new RuntimeException("Ime korisnika mora biti uneto");
+		}
 		this.korisnik = korisnik;
 	}
+
 	/**
 	 * metoda koja vraca atribut poruka
-	 * @return
+	 * 
+	 * @return tekst poruke
 	 */
 	public String getPoruka() {
 		return poruka;
 	}
+
 	/**
 	 * metoda koja postavlja vrednost atributa poruka
+	 * 
 	 * @param poruka
+	 *            predstavlja tekst poruke
 	 */
 	public void setPoruka(String poruka) {
 		if (poruka == null || poruka.length() > 140)
@@ -41,6 +50,7 @@ public class TwitterPoruka {
 					"Poruka mora biti uneta i mora imati najvise 140 znakova");
 		this.poruka = poruka;
 	}
+
 	/**
 	 * metoda toString koja vraca korisnika i tekst poruke
 	 */

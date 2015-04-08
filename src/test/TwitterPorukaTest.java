@@ -19,7 +19,7 @@ public class TwitterPorukaTest {
 	TwitterPoruka tp;
 
 	/**
-	 * @throws java.lang.Exception
+	 * @throws java.lang.Exception baca izuzetak
 	 */
 	@Before
 	public void setUp() throws Exception {
@@ -27,7 +27,7 @@ public class TwitterPorukaTest {
 	}
 
 	/**
-	 * @throws java.lang.Exception
+	 * @throws java.lang.Exception baca izuzetak
 	 */
 	@After
 	public void tearDown() throws Exception {
