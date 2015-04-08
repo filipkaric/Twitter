@@ -3,6 +3,8 @@ package com.twitter.poruke;
 public class TwitterPoruka {
 	/**
 	 * atributi klase TwitterPoruka
+	 * korisnik predstavlja nadimak koji je korisnik izabrao
+	 * poruka je tekst poruke koju korisnik zeli da objavi
 	 */
 	private String korisnik;
 	private String poruka;
@@ -18,8 +20,8 @@ public class TwitterPoruka {
 	 * @param korisnik
 	 */
 	public void setKorisnik(String korisnik) {
-		if (korisnik == null || korisnik.equals(""))
-			throw new RuntimeException("Ime korisnika mora biti uneto");
+		if (korisnik == null || korisnik.equals("")){
+			throw new RuntimeException("Ime korisnika mora biti uneto");}
 		this.korisnik = korisnik;
 	}
 	/**
