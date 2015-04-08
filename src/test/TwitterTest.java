@@ -59,13 +59,8 @@ public class TwitterTest {
 		
 		TwitterPoruka[] a = tw.vratiPoruke(2, "Opet");
 		assertEquals("KORISNIK:Filip PORUKA:Opet slusam whoSee Dje se kupas?",a[0].toString());
-		assertEquals("KORISNIK:Darko PORUKA:Opet sam pao ispit :(",a[0].toString());
+		assertEquals("KORISNIK:Darko PORUKA:Opet sam pao ispit :(",a[1].toString());
 		
-	}
-
-	@Test
-	public void test() {
-		fail("Not yet implemented");
 	}
 
 }
