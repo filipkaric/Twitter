@@ -39,7 +39,7 @@ public class TwitterPoruka {
 	}
 
 	/**
-	 * metoda koja postavlja vrednost atributa poruka
+	 * metoda koja postavlja vrednost atributa poruka.
 	 * 
 	 * @param poruka
 	 *            predstavlja tekst poruke
